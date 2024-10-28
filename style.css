@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+
+.logo h1 {
+    color: white;
+    margin-right: 10px;
+}
+
+.logo-sombra {
+    width: 70px; 
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    border-radius: 8px; 
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+}
+
+.menu-horizontal li {
+    margin: 0 15px;
+}
+
+.menu-horizontal a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-horizontal a:hover {
+    color: #ffeb3b;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(10, 9, 9);
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ffeb3b;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #fdd835;
+}
+
+.productos-destacados {
+    padding: 40px;
+    text-align: center;
+}
+
+.productos-destacados h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ofertas {
+    background-color: #ffeb3b;
+    padding: 20px;
+    text-align: center;
+}
+
+.ofertas h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.oferta p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+}

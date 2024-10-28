@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.ofertas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.oferta {
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.oferta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.oferta h3 {
+    color: #856404;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.oferta p {
+    font-size: 18px;
+    color: #856404;
+    margin-bottom: 15px;
+}
+
+.oferta .precio-anterior {
+    text-decoration: line-through;
+    color: #dc3545;
+    font-size: 16px;
+}
+
+.oferta .precio-nuevo {
+    font-size: 22px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.boton-oferta {
+    background-color: #ffca2c;
+    color: #856404;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton-oferta:hover {
+    background-color: #ffc107;
+}
+
+
+@media (max-width: 768px) {
+    .ofertas {
+        grid-template-columns: 1fr;
+    }
+}
